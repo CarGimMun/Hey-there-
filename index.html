@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100f">
+  <title>HEARTBEAT — A living portfolio</title>
+  <meta name="description" content="A living portfolio exploring biomedical engineering, creative technology and visual storytelling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Carga del visor de modelos 3D de Google -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Heartbeat home">H<span>·</span>B</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">WORK <span>03</span></a>
+      <a href="#future">FUTURE FILES</a>
+      <a href="#notes">READING LIST</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+    <a class="contact-link" href="mailto:your.email@example.com">LET'S TALK <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> BIOMEDICAL ENGINEERING × CREATIVE TECHNOLOGY</p>
+        <h1>Ideas with<br><em>a pulse.</em></h1>
+        <p class="hero-intro">A living portfolio at the intersection of science, code and imagination. Click a chamber. Discover a project.</p>
+        <div class="hero-meta">
+          <span>BASED IN MUNICH, DE</span>
+          <span>AVAILABLE FOR CREATIVE COLLABORATIONS</span>
+        </div>
+      </div>
+
+      <div class="heart-stage" aria-label="Interactive heart portfolio">
+        <div class="stage-orbit orbit-one"></div>
+        <div class="stage-orbit orbit-two"></div>
+        <div class="stage-crosshair crosshair-v"></div>
+        <div class="stage-crosshair crosshair-h"></div>
+        <div class="stage-label label-top">FIG. 01 / CREATIVE SYSTEM</div>
+        
+        <!-- Visor directo del archivo GLB descargado de Sketchfab -->
+        <div id="heart-canvas" role="img" aria-label="Animated three-dimensional heart.">
+          <model-viewer 
+            src="assets/heart.glb" 
+            alt="3D Heart Model" 
+            auto-rotate 
+            camera-controls 
+            autoplay 
+            shadow-intensity="1" 
+            style="width: 100%; height: 100%;">
+          </model-viewer>
+        </div>
+
+        <svg class="flow-lines" viewBox="0 0 600 560" aria-hidden="true">
+          <path d="M70 210 C135 210 130 245 180 245" />
+          <path d="M420 165 C480 165 475 130 530 130" />
+          <path d="M100 400 C155 400 155 365 205 365" />
+          <path d="M400 400 C455 400 465 435 530 435" />
+        </svg>
+        <button class="chamber-marker marker-one" data-project="0" aria-label="Open project one"><span>01</span><i></i></button>
+        <button class="chamber-marker marker-two" data-project="1" aria-label="Open project two"><span>02</span><i></i></button>
+        <button class="chamber-marker marker-three" data-project="2" aria-label="Open project three"><span>03</span><i></i></button>
+        <button class="chamber-marker marker-about" data-project="about" aria-label="Open about me"><span>ME</span><i></i></button>
+        <div class="stage-label label-bottom"><span>♥</span> LIVE INTERFACE / DRAG TO ROTATE</div>
+        <div class="heartbeat-line" aria-hidden="true"><svg viewBox="0 0 500 42" preserveAspectRatio="none"><path d="M0 21 H120 L134 21 L145 6 L158 35 L173 13 L185 21 H270 L283 21 L295 5 L308 36 L323 15 L335 21 H500"/></svg></div>
+      </div>
+
+      <aside class="project-card" id="project-card" aria-live="polite">
+        <div class="card-topline"><span id="card-index">SELECTED / 00</span><span class="card-status"><i></i> PORTFOLIO FILE</span></div>
+        <p class="card-kicker" id="card-category">A WORK IN PROGRESS</p>
+        <h2 id="card-title">Choose a<br><em>chamber.</em></h2>
+        <p id="card-description">Each pulse opens a different part of my practice — from biomedical data to experiments with AI and visual storytelling.</p>
+        <div class="card-tags" id="card-tags"><span>SCIENCE</span><span>DESIGN</span><span>CODE</span></div>
+        <a class="card-cta" id="card-link" href="#work">EXPLORE THE WORK <span>↗</span></a>
+        <p class="card-hint">SELECT A MARKER AROUND THE HEART</p>
+      </aside>
+    </section>
+
+    <section class="ticker" aria-label="Areas of interest">
+      <div>VISUALISE THE INVISIBLE <span>✳</span> MAKE DATA FEEL HUMAN <span>✳</span> BUILD WITH CURIOSITY <span>✳</span> VISUALISE THE INVISIBLE <span>✳</span> MAKE DATA FEEL HUMAN <span>✳</span></div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">01 / SELECTED WORK</p>
+        <h2>Small archive.<br><em>Big questions.</em></h2>
+        <p class="section-deck">Three starting points. Each project is a little laboratory for testing how technology can explain, connect or surprise.</p>
+      </div>
+      <div class="work-grid" id="work-grid">
+        <article class="work-tile tile-red">
+          <div class="tile-number">01 / CODE + CARE</div>
+          <div class="tile-art report-art"><span class="art-bracket">[</span><span class="report-word">AI<span>Claro</span></span><div class="report-lines"><i></i><i></i><i></i><i></i></div><span class="art-bracket">]</span></div>
+          <div class="tile-copy"><p class="tile-type">AI · HEALTH LITERACY</p><h3>AIClaro</h3><p>A project exploring how AI can make clinical discharge information easier to understand.</p><a href="https://github.com/CarGimMun" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div>
+        </article>
+        <article class="work-tile tile-blue">
+          <div class="tile-number">02 / SIGNAL + MOTION</div>
+          <div class="tile-art signal-art"><svg viewBox="0 0 340 160" aria-hidden="true"><path d="M0 82 H48 L61 82 L77 25 L94 135 L111 61 L126 82 H177 L190 82 L207 25 L224 135 L241 61 L257 82 H340"/></svg><span>DATA IS NEVER<br>JUST DATA.</span></div>
+          <div class="tile-copy"><p class="tile-type">BIOMEDICAL DATA · VISUALISATION</p><h3>Signals & Stories</h3><p>A placeholder for a data, signal-processing or monitoring project from your GitHub.</p><a href="https://github.com/CarGimMun" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div>
+        </article>
+        <article class="work-tile tile-cream">
+          <div class="tile-number">03 / BODY + TECHNOLOGY</div>
+          <div class="tile-art neuro-art"><div class="neuro-ring ring-a"></div><div class="neuro-ring ring-b"></div><div class="neuro-ring ring-c"></div><span>MOVE<br>THINK<br>REPEAT.</span></div>
+          <div class="tile-copy"><p class="tile-type">HUMAN MOVEMENT · RESEARCH</p><h3>Human in Motion</h3><p>A placeholder for a neurorehabilitation, movement-analysis or experimental project.</p><a href="https://github.com/CarGimMun" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div>
+        </article>
+      </div>
+      <p class="edit-note"><span>↳</span> The project names and GitHub links are editable in <code>script.js</code>. Replace these examples with your actual repositories before publishing.</p>
+    </section>
+
+    <section class="future-section" id="future">
+      <div class="future-left">
+        <p class="eyebrow">02 / FUTURE FILES</p>
+        <h2>Not built<br><em>yet.</em></h2>
+        <p>Some ideas are still beating quietly in the background. This is where I keep the questions I want to turn into experiments.</p>
+      </div>
+      <div class="future-list">
+        <article><span class="future-index">F—01</span><div><h3>The Heart, in 3D</h3><p>An explorable anatomical heart with a visual story of electrical conduction.</p></div><span class="future-status">IN MY HEAD</span></article>
+        <article><span class="future-index">F—02</span><div><h3>Data as a Living Thing</h3><p>Turning physiological signals into a generative visual language.</p></div><span class="future-status">SKETCHING</span></article>
+        <article><span class="future-index">F—03</span><div><h3>Museum of Future Medicine</h3><p>A digital cabinet of curious technologies, from neural interfaces to nanorobots.</p></div><span class="future-status">ON THE LIST</span></article>
+        <article><span class="future-index">F—04</span><div><h3>One Prompt, Many Worlds</h3><p>A creative AI study on visual consistency, art direction and iteration.</p></div><span class="future-status">ON THE LIST</span></article>
+      </div>
+    </section>
+
+    <section class="reading-section section" id="notes">
+      <div class="section-heading reading-heading">
+        <p class="eyebrow">03 / OPEN TABS</p>
+        <h2>Things that make<br><em>me think.</em></h2>
+        <p class="section-deck">A living reading list: science, interactive graphics and creative tools that keep my curiosity switched on.</p>
+      </div>
+      <div class="reading-grid">
+        <a class="reading-card" href="https://threejs.org/" target="_blank" rel="noreferrer"><span class="reading-kind">TOOL / 01</span><span class="reading-arrow">↗</span><h3>Three.js</h3><p>Bringing 3D experiences to the browser.</p><span class="reading-domain">THREEJS.ORG</span></a>
+        <a class="reading-card" href="https://distill.pub/" target="_blank" rel="noreferrer"><span class="reading-kind">JOURNAL / 02</span><span class="reading-arrow">↗</span><h3>Distill</h3><p>Beautiful, interactive explanations of machine learning and science.</p><span class="reading-domain">DISTILL.PUB</span></a>
+        <a class="reading-card" href="https://www.informationisbeautifulawards.com/" target="_blank" rel="noreferrer"><span class="reading-kind">INSPIRATION / 03</span><span class="reading-arrow">↗</span><h3>Information is Beautiful</h3><p>Data visualisation as a form of visual storytelling.</p><span class="reading-domain">INFORMATIONISBEAUTIFULAWARDS.COM</span></a>
+        <a class="reading-card" href="https://www.blender.org/" target="_blank" rel="noreferrer"><span class="reading-kind">TOOL / 04</span><span class="reading-arrow">↗</span><h3>Blender</h3><p>Open-source 3D creation for images, motion and worlds.</p><span class="reading-domain">BLENDER.ORG</span></a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-stamp"><span>CURIOUS<br>BY DESIGN</span><div class="stamp-heart">♥</div></div>
+      <div class="about-copy">
+        <p class="eyebrow">04 / THE HUMAN BEHIND THE HEART</p>
+        <h2>Hi, I'm Carmen.<br><em>An engineer who likes to ask “what if?”</em></h2>
+        <p>I'm a Biomedical Engineering graduate currently studying Biomedical Engineering and Medical Physics at TUM. I'm interested in the space where health, data, AI and visual communication meet — especially the part before the algorithm: the signal, the image, the label, the decision.</p>
+        <p>This portfolio is my playground for learning in public: building small things, asking better questions and making complex ideas easier to see.</p>
+        <div class="about-links"><a href="https://github.com/CarGimMun" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="mailto:your.email@example.com">EMAIL ↗</a><a href="#top">BACK TO THE HEART ↑</a></div>
+      </div>
+      <div class="about-side"><span class="side-label">CURRENTLY EXPLORING</span><p>Creative AI<br>Scientific visualisation<br>Interactive 3D<br>Data storytelling</p><span class="side-label">CURRENT LOCATION</span><p>MUNICH, GERMANY</p></div>
+    </section>
+
+    <footer class="footer">
+      <a class="wordmark" href="#top">H<span>·</span>B</a>
+      <p>MADE WITH CURIOSITY & A LITTLE CODE.</p>
+      <p>© <span id="year"></span> HEARTBEAT / A LIVING PORTFOLIO</p>
+    </footer>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
